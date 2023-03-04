@@ -6,17 +6,20 @@ hour = int(time.strftime('%H'))
 minute = int(time.strftime('%M'))
 second = int(time.strftime('%S'))
 
+#Name
+name = input("Please enter your name: ")
+
 # Display the current time
 print("The time is:", timestamp)
 
 # print good morning/evening/afternoon/night
 if (hour > 4 and hour <= 12):
-    print("Good Morning Sir!")
+    print("Good Morning",name,"!")
 elif (hour > 12 and hour < 17):
-    print("Good Afternoon Sir!")
+    print("Good Afternoon",name,"!")
 elif (hour > 17 and hour < 19):
-    print("Good Evening Sir!")
+    print("Good Evening",name,"!")
 else:
-    print("Good Night Sir!")
+    print("Good Night",name,"!")
 
 # End...
